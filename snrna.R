@@ -8,9 +8,9 @@ sample.type <- "human" | "mouse"
 
 #Load ensembl rna.data
 if (sample.type == "human"){
-    mart <- useMart(biomart="ensembl", rna.dataset="hsapiens_gene_ensembl")
+    mart <- useMart(biomart="ensembl", dataset="hsapiens_gene_ensembl")
 } else if (sample.type == "mouse"){
-    mart <- useMart(biomart="ensembl", rna.dataset="mmusculus_gene_ensembl")
+    mart <- useMart(biomart="ensembl", dataset="mmusculus_gene_ensembl")
 }
 
 
