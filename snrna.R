@@ -1,5 +1,3 @@
-#!/usr/local/R/4.0.3/bin/R
-
 library(Seurat)
 library(biomaRt)
 
