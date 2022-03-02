@@ -1,5 +1,3 @@
-#!/usr/local/R/4.0.3/bin/R
-
 library(EnsDb.Hsapiens.v86)
 library(EnsDb.Mmusculus.v79)
 library(ChIPseeker)
@@ -12,8 +10,8 @@ library(ggplot2)
 library(stringr)
 
 
-path <- "/path/to/cellranger-count/output/folder/outs/"
-sample.type <- "human" | "mouse"
+path <- "/path/to/cellranger-count/output/folder/outs/" #Provide the location of the CellRanger output's outs folder
+sample.type <- "human" #Specify the species, human or mouse
 
 #Read raw data
 data <- Read10X_h5(filename = paste0(path,"/filtered_peak_bc_matrix.h5"))
