@@ -1,8 +1,8 @@
 library(Seurat)
 library(biomaRt)
 
-path <- "/path/to/cellranger-count/output/folder/outs/"
-sample.type <- "human" | "mouse"
+path <- "/path/to/cellranger-count/output/folder/outs/" #Provide the location of the CellRanger output's outs folder
+sample.type <- "human" #Specify the species, human or mouse
 
 #Load ensembl rna.data
 if (sample.type == "human"){
