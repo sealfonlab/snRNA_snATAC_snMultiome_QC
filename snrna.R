@@ -36,7 +36,7 @@ if (!is.na(xist.index)){
     percent.xist <- 0
 }
 
-#Determine gender
+#Determine sex
 if(percent.xist > 0.1){
     gender <- "Female"
 }else{
