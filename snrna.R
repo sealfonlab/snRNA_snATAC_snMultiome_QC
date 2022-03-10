@@ -38,11 +38,11 @@ if (!is.na(xist.index)){
 
 #Determine sex
 if(percent.xist > 0.1){
-    gender <- "Female"
+    sex <- "Female"
 }else{
-    gender <- "Male"
+    sex <- "Male"
 }
 
 
 #Return all result
-cat(paste0(c(percent.mt.20, percent.xist, gender), collapse = ","))
+cat(paste0(c(percent.mt.20, percent.xist, sex), collapse = ","))
