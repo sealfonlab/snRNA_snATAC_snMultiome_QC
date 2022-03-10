@@ -63,9 +63,9 @@ if (!is.na(xist.index)){
 
 #Determine sex
 if(percent.xist > 0.1){
-    rna.gender <- "Female"
+    rna.sex <- "Female"
 }else{
-    rna.gender <- "Male"
+    rna.sex <- "Male"
 }
 
 # Prepared to read ATAC side of the data
@@ -123,4 +123,4 @@ for (i in 1:length(peaks.index)){
 }
 
 #Return all result
-cat(paste0(c(percent.mt.20, percent.xist, rna.gender, mono.nuc, nfr), collapse = ","))
+cat(paste0(c(percent.mt.20, percent.xist, rna.sex, mono.nuc, nfr), collapse = ","))
